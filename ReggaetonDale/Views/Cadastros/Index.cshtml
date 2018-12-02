@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro";
+}
+
+<div class="row">
+    
+    <div class="row">
+        <h2>Cadastro Usuário</h2>
+
+        <hr />
+        <form>
+            <div class="row MargensRow">
+                <div class="col-sm-4">
+                    <label class="label AzulFacebook">Login/Email</label>
+                    <input type="email" class="form-control MargensTopLabel" />
+                </div>
+            </div>
+
+            <div class="row MargensRow">
+                <div class="col-sm-4">
+                    <label class="label AzulFacebook">Senha</label>
+                    <input class="form-control MargensTopLabel" type="password" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 MargensRow">
+                    <label class="label AzulFacebook">É Admin</label>
+                    <select class="form-control MargensTopLabel">
+                        <option value="0">Não</option>
+                        <option value="1">Sim</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row MargensRow">
+                <div class="col-sm-3">
+                    <label class="MargensRow"></label>
+                    <button class="btn btn-block VerdinhaMarCaribe" type="submit">Salvar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

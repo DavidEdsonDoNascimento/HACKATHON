@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <title>@ViewBag.Title - DAGGUP</title>
+    <link rel="icon" href="~/Imgs/LogoPNG.png" type="image/x-icon" />
+</head>
+
+<body style="background-color: rebeccapurple; color: whitesmoke;">
+    <div class="navbar navbar-inverse navbar-fixed-top BackgroundBase" style="font-size: 20px; color: whitesmoke;">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="@(Url.Action("Index", "Home"))" class="navbar-left"><img src="~/Imgs/Logo.jpg" width="120px" height="60px"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @*<li>@Html.ActionLink("Início", "Index", "Home")</li>*@
+                    <li>@Html.ActionLink("Cadastro de Usuário", "Index", "Cadastros")</li>
+                    <li>@Html.ActionLink("Cadastrar Carreira", "Carreira", "Cadastros")</li>
+                    <li>@Html.ActionLink("Matricular Usuário", "UsuarioCarreira", "Cadastros")</li>
+                    <li>@Html.ActionLink("Carreiras", "Carreiras", "Usuario")</li>
+                    <li>@Html.ActionLink("Relatório", "Relatorio", "Usuario")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        
+        <div class="row">
+            <div class="row">
+                <hr />
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - DAGGUP</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

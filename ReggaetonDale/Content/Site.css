@@ -1,0 +1,53 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: whitesmoke;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+title {
+    color: floralwhite;
+}
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.MargensRow {
+    padding-top: 20px;
+}
+.MargensTopLabel {
+    margin-top: 10px;
+}
+.AzulFacebook {
+    background-color: #5272bf;
+}
+.BackgroundBase {
+    background-color: #3F4170;
+}
+.Base {
+    background-color: #52adac;
+}
+.RosinhaGay {
+    color: #bf6cb0;
+}
+.VerdinhaMarCaribe {
+    background-color: #52adac;
+}
+table{
+    background-color: #ffffff;
+    color: #000000;
+}

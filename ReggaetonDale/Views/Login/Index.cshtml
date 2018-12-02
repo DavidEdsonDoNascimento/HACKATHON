@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="row">
+
+    <div class="row">
+        <h2>Login</h2>
+
+        <hr />
+        <form style="padding-left: 400px;">
+            <div class="row MargensRow">
+                <div class="col-sm-7" style="max-width: 1000px;">
+                    <label class="label AzulFacebook">Login/Email</label>
+                    <input type="email" class="form-control MargensTopLabel" />
+                </div>
+            </div>
+
+            <div class="row MargensRow" style="max-width: 1000px;">
+                <div class="col-sm-7">
+                    <label class="label AzulFacebook">Senha</label>
+                    <input class="form-control MargensTopLabel" type="password" />
+                </div>
+            </div>
+
+            <div class="row MargensRow">
+                <div class="col-sm-3" style="margin-left: 45px;">
+                    <label class="MargensRow"></label>
+                    <a style="color: whitesmoke;" href="@(Url.Action("Index", "Home"))" class="btn btn-block VerdinhaMarCaribe center-block" type="submit">Entrar</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

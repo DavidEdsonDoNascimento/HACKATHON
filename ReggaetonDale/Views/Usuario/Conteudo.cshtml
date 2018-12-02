@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Conteudo";
+}
+
+<h2>Conteudo</h2>
+
+<div style="margin-left: 300px" class="row">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pRuwMufwNo0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <h3>Pergunta</h3>
+    <form action="/" method="post">
+        <label>Caso o cliente esteja sem conexão, qual a primeira medida a ser tomada? </label>
+        <br/>
+        <input type="radio" name="resp"><span>A</span> Solicitar para que o cliente reinicie o roteador<br />
+        <input type="radio" name="resp"><span>B</span> Verificar se o cliente está conectado<br />
+        <input type="radio" name="resp"><span>C</span> Abrir uma ordem de serviço para atendimento no local<br />
+        <br />
+        <a type="submit" href="@(Url.Action("Conteudo", "Usuario"))" style="width: 250px;color: whitesmoke;" class="btn btn-block VerdinhaMarCaribe">Responder </a>
+    </form>
+</div>
